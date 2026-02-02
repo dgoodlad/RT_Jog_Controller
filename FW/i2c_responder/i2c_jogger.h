@@ -2,7 +2,7 @@
 #define __I2C_JOGGER_H__
 
 #define PLUGIN_VERSION "PLUGIN: Keypad v1.41"
-#define JOG2K_VERSION  "FW: v1.1.0"
+#define JOG2K_VERSION  "FW: v1.1.b"
 
 // Which pin on the Arduino is connected to the NeoPixels?
 #define PIN        22 // On Trinket or Gemma, suggest changing this to 1
@@ -355,6 +355,7 @@ typedef union {
                 mpg            :1,
                 homed          :1,
                 tlo_referenced :1,
+                imperial       :1,
                 mode           :3; // from machine_mode_t setting
     };
 } machine_modes_t;
